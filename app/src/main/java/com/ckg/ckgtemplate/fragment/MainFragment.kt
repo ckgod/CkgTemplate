@@ -9,19 +9,18 @@ class MainFragment() : BaseKotlinFragment<FragmentMainBinding>() {
         get() = R.layout.fragment_main
 
     override fun initStartView() {
-        TODO("Not yet implemented")
+        binding.btn.setOnClickListener {
+            showProgress()
+        }
     }
 
     override fun initDataBinding() {
-        TODO("Not yet implemented")
     }
 
     override fun initAfterBinding() {
-        TODO("Not yet implemented")
     }
 
     override fun reLoadUI() {
-        TODO("Not yet implemented")
     }
 
     companion object {
